@@ -13,11 +13,17 @@ https://www.cnvc.org/training/resource/feelings-inventory
 ### emotions_images.py
 This Python script reads in ```emotions.csv``` and scrapes the top 100 images for each emotion. 
 ### emotions_images.csv
-The resulting file is a dataset with features ```[emotion, [list of images]]```
+The resulting file is a dataset with features ```[emotion, image]```
 
 ## 3. Emotions paried with colors 
-### emotions_colors.py
+### emotions_images_colors.py
 This Python script reads in ```emotion_images.csv``` and returns the dominant color of each image associated with each emotion.  
-### emotions_images.csv
-The resulting file is a tidy dataset with features ```[emotion, color]```
+### emotions_images_colors.csv
+The resulting file is a dataset with features ```[emotion, image, dominant color]```
+
+## 4. Clean data 
+### clean_data.py
+This Python script reads in ```emotion_images_colors.csv``` and removes any NaN values or duplicates. 
+### cleaned_data.json
+The resulting file is a tidy dataset with features ```[emotion, dominant color]```
 
