@@ -27,3 +27,7 @@ This Python script reads in ```emotion_images_colors.csv``` and removes any NaN 
 ### cleaned_data.json
 The resulting file is a tidy dataset with features ```[emotion, dominant color]```
 
+# Model 
+
+### train_knn.py 
+This file uses ```cleaned_data.json``` to build a classifier that can prediction emotions from colors. The classifier is a KNN classifier with a custom loss function. That function penalizes the semantic distance between words. This file returns ```clf.pkl```. 
