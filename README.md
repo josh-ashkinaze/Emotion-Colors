@@ -25,7 +25,7 @@ The resulting file is a dataset with features ```[emotion, image, dominant color
 ### clean_data.py
 This Python script reads in ```emotion_images_colors.csv``` and removes any NaN values or duplicates. 
 ### cleaned_data.json
-The resulting file is a tidy dataset with features ```[emotion, dominant color]```
+The resulting file is a dataset with features ```[emotion, dominant color]```
 
 # Model 
 
